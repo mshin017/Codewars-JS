@@ -15,6 +15,10 @@ function reverseWords(str){
       }).join(' ');
 }
 
+function reverseWords(str){
+    return str.split("").reverse().join("").split(" ").reverse().join(" ");
+}
+
 
 Test.it('Tests', _ => {
     Test.expect(reverseWords('The quick brown fox jumps over the lazy dog.') === 'ehT kciuq nworb xof spmuj revo eht yzal .god');
